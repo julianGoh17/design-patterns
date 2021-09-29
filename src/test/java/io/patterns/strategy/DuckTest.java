@@ -3,7 +3,7 @@ package io.patterns.strategy;
 import io.patterns.strategy.ducks.Duck;
 import io.patterns.strategy.ducks.RegularDuck;
 import io.patterns.strategy.ducks.RubberDuck;
-import io.patterns.strategy.ducks.flyable.FlyWithWingsBehaviour;
+import io.patterns.strategy.ducks.fly.FlyWithWingsBehaviour;
 import io.patterns.strategy.ducks.quack.LoudQuack;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
