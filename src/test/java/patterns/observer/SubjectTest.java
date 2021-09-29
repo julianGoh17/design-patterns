@@ -1,4 +1,4 @@
-package io.patterns.observer;
+package test.java.patterns.observer;
 
 import io.patterns.observer.observer.Observer;
 import io.patterns.observer.observer.WeatherDisplay;

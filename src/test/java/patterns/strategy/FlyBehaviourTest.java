@@ -1,4 +1,4 @@
-package io.patterns.strategy;
+package test.java.patterns.strategy;
 
 import io.patterns.strategy.fly.FlyBehaviour;
 import io.patterns.strategy.fly.FlyWithWingsBehaviour;
