@@ -14,4 +14,4 @@ jobs:
           java-version: '11'
           java-package: jdk
       - name: Run Unit Tests
-        run: mvn -B package --file pom.xml
+        run: mvn test
