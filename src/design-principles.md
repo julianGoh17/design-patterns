@@ -23,3 +23,17 @@ Loosely coupled designs allow us to build flexible OO systems that can handle ch
 We should be able to extend the code base without modifying existing classes. 
 Creates a design that are resilient to change and flexible enough to take on new functionality to meet changing requirements.
 By not changing existing code, we don't risk creating buggy code.
+
+### Dependency Inversion Principle
+
+Depend upon abstractions. Do not depend upon concrete classes.
+It suggests that our high-level components should not depend on our low-level components; rather, they should both depend on abstractions.
+For example, the High-level pizza store doesn't care about what pizza it uses, just that it uses a pizza.
+The inversion means that low-level components depend on higher level abstractions. 
+For example, a Normal pizza depends on the Pizza abstraction.
+
+Avoid: 
+
+- No variable should hold a reference to a concrete class.
+- No class should derive from a concrete class.
+- No method should override an implemented method of any of its base classes.
