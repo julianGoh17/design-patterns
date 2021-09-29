@@ -1,7 +1,7 @@
 package io.patterns.strategy.ducks;
 
-import io.patterns.strategy.ducks.fly.FlyWithWingsBehaviour;
-import io.patterns.strategy.ducks.quack.LoudQuack;
+import io.patterns.strategy.fly.FlyWithWingsBehaviour;
+import io.patterns.strategy.quack.LoudQuack;
 
 public class RegularDuck extends Duck {
     public RegularDuck() {

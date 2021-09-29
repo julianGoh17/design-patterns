@@ -1,7 +1,7 @@
-package io.patterns.observer.vanilla;
+package io.patterns.observer;
 
-import io.patterns.observer.vanilla.observer.Observer;
-import io.patterns.observer.vanilla.observer.WeatherDisplay;
+import io.patterns.observer.observer.Observer;
+import io.patterns.observer.observer.WeatherDisplay;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

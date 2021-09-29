@@ -3,8 +3,8 @@ package io.patterns.strategy;
 import io.patterns.strategy.ducks.Duck;
 import io.patterns.strategy.ducks.RegularDuck;
 import io.patterns.strategy.ducks.RubberDuck;
-import io.patterns.strategy.ducks.fly.FlyWithWingsBehaviour;
-import io.patterns.strategy.ducks.quack.LoudQuack;
+import io.patterns.strategy.fly.FlyWithWingsBehaviour;
+import io.patterns.strategy.quack.LoudQuack;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

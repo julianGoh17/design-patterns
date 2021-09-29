@@ -1,8 +1,8 @@
 package io.patterns.strategy;
 
-import io.patterns.strategy.ducks.quack.LoudQuack;
-import io.patterns.strategy.ducks.quack.QuackBehaviour;
-import io.patterns.strategy.ducks.quack.SilentQuack;
+import io.patterns.strategy.quack.LoudQuack;
+import io.patterns.strategy.quack.QuackBehaviour;
+import io.patterns.strategy.quack.SilentQuack;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

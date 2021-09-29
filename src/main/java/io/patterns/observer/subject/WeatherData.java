@@ -1,6 +1,6 @@
-package io.patterns.observer.vanilla.subject;
+package io.patterns.observer.subject;
 
-import io.patterns.observer.vanilla.observer.Observer;
+import io.patterns.observer.observer.Observer;
 
 import java.util.ArrayList;
 
