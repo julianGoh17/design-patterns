@@ -1,4 +1,4 @@
-package test.java.patterns.strategy;
+package test.java.io.patterns.strategy;
 
 import io.patterns.strategy.ducks.Duck;
 import io.patterns.strategy.ducks.RegularDuck;
