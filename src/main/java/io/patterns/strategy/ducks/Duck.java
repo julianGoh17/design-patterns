@@ -1,7 +1,7 @@
 package io.patterns.strategy.ducks;
 
-import io.patterns.strategy.ducks.flyable.FlyBehaviour;
-import io.patterns.strategy.ducks.quack.QuackBehaviour;
+import io.patterns.strategy.fly.FlyBehaviour;
+import io.patterns.strategy.quack.QuackBehaviour;
 
 public abstract class Duck {
     protected FlyBehaviour flyBehaviour;

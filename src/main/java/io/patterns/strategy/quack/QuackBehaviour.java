@@ -1,4 +1,4 @@
-package io.patterns.strategy.ducks.quack;
+package io.patterns.strategy.quack;
 
 public interface QuackBehaviour {
     public abstract boolean quack();

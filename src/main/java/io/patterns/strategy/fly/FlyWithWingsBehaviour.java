@@ -1,4 +1,4 @@
-package io.patterns.strategy.ducks.flyable;
+package io.patterns.strategy.fly;
 
 public class FlyWithWingsBehaviour implements FlyBehaviour {
     @Override
