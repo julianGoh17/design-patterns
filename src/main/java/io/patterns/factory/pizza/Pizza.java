@@ -9,6 +9,7 @@ public abstract class Pizza {
     public Pizza(String description, IngredientFactory ingredients) {
         this.description = description;
         this.ingredients = ingredients;
+        this.description += String.format(" with %s, %s", this.ingredients.getMeat(), this.ingredients.getSauce());
     }
 
     public void addToDescription(String description) {

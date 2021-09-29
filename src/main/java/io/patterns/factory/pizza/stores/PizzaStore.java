@@ -1,7 +1,6 @@
 package io.patterns.factory.pizza.stores;
 
 import io.patterns.factory.ingredients.IngredientFactory;
-import io.patterns.factory.pizza.NormalPizza;
 import io.patterns.factory.pizza.Pizza;
 
 public abstract class PizzaStore {

@@ -1,18 +1,27 @@
 package io.patterns.factory;
 
 import io.patterns.factory.ingredients.NormalIngredientFactory;
+import io.patterns.factory.ingredients.SpecialIngredientFactory;
 import io.patterns.factory.pizza.NormalPizza;
 import io.patterns.factory.pizza.Pizza;
+import io.patterns.factory.pizza.SpecialPizza;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class PizzaTest {
     public final static String NORMAL_PIZZA_DESCRIPTION = "Normal pizza with Pepperoni, Tomato Sauce";
+    public final static String SPECIAL_PIZZA_DESCRIPTION = "Special pizza with Fish, Tartar Sauce";
 
     @Test
     public void TestCreateNormalPizza() {
         Pizza pizza = new NormalPizza(new NormalIngredientFactory());
         Assert.assertEquals(NORMAL_PIZZA_DESCRIPTION, pizza.getDescription());
+    }
+
+    @Test
+    public void TestCreateSpecialPizza() {
+        Pizza pizza = new SpecialPizza(new SpecialIngredientFactory());
+        Assert.assertEquals(SPECIAL_PIZZA_DESCRIPTION, pizza.getDescription());
     }
 
     @Test
