@@ -4,7 +4,7 @@ import io.patterns.factory.ingredients.IngredientFactory;
 import io.patterns.factory.ingredients.NormalIngredientFactory;
 import io.patterns.factory.ingredients.SpecialIngredientFactory;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class IngredientFactoryTest {
     @Test

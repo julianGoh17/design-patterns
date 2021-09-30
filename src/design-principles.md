@@ -37,3 +37,17 @@ Avoid:
 - No variable should hold a reference to a concrete class.
 - No class should derive from a concrete class.
 - No method should override an implemented method of any of its base classes.
+
+### Principle of Least Knowledge
+
+Only talk to your immediate friends.
+This principle helps to reduce the number of class interactions.
+It prevents us from creating a large number of classes that are coupled together such that changes to one part of the system cascades into another.
+
+According to this principle, an object should only invoke methods if it belongs to:
+
+- The object itself
+- Objects passed in as a parameter of the method
+- Any object the method creates or instantiates
+- Any components of the object
+
