@@ -32,7 +32,7 @@ public class PizzaStoreTest {
     @Test
     public void TestOrderSpecialPizza() {
         PizzaStore store = new SpecialPizzaStore();
-        Pizza pizza = store.createPizza();
+        Pizza pizza = store.orderPizza();
         Assert.assertEquals(String.format("%s that has been baked, cut, and boxed", PizzaTest.SPECIAL_PIZZA_DESCRIPTION), pizza.getDescription());
     }
 }

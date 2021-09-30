@@ -1,4 +1,4 @@
-package test.java.io.patterns.strategy;
+package io.patterns.strategy;
 
 import io.patterns.strategy.quack.LoudQuack;
 import io.patterns.strategy.quack.QuackBehaviour;
