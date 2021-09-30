@@ -6,7 +6,7 @@ import io.patterns.factory.pizza.Pizza;
 import io.patterns.factory.pizza.factory.NormalPizzaFactory;
 import io.patterns.factory.pizza.factory.PizzaFactory;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class PizzaFactoryTest {
     @Test

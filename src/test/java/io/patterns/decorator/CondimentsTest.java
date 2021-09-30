@@ -5,7 +5,7 @@ import io.patterns.decorator.condiments.CondimentDecorator;
 import io.patterns.decorator.condiments.Milk;
 import io.patterns.decorator.condiments.WhipCream;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class CondimentsTest {
     @Test

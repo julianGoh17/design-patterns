@@ -1,10 +1,11 @@
 package io.patterns.facade.system;
 
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class TheatreLightTest {
     public final static double LUMINOSITY = 0.5;
+
     @Test
     public void TestInit() {
         TheatreLight light = new TheatreLight();

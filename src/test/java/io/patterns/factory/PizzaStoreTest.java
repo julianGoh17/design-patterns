@@ -5,7 +5,7 @@ import io.patterns.factory.pizza.stores.NormalPizzaStore;
 import io.patterns.factory.pizza.stores.PizzaStore;
 import io.patterns.factory.pizza.stores.SpecialPizzaStore;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class PizzaStoreTest {
     @Test

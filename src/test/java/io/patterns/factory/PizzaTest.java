@@ -6,7 +6,7 @@ import io.patterns.factory.pizza.NormalPizza;
 import io.patterns.factory.pizza.Pizza;
 import io.patterns.factory.pizza.SpecialPizza;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class PizzaTest {
     public final static String NORMAL_PIZZA_DESCRIPTION = "Normal pizza with Pepperoni, Tomato Sauce";

@@ -2,7 +2,7 @@ package io.patterns.command.command;
 
 import io.patterns.command.receivers.Fan;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class FanOnCommandTest {
     @Test

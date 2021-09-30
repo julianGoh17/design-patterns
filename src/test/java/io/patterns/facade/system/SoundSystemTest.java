@@ -1,10 +1,11 @@
 package io.patterns.facade.system;
 
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class SoundSystemTest {
     public static final int VOLUME = 10;
+
     @Test
     public void TestInit() {
         SoundSystem system = new SoundSystem();

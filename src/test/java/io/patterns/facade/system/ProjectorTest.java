@@ -1,7 +1,7 @@
 package io.patterns.facade.system;
 
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class ProjectorTest {
     public static final String DVD = "Rush Hour 3";

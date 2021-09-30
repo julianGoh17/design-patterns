@@ -7,7 +7,7 @@ import io.patterns.command.command.NoCommand;
 import io.patterns.command.receivers.Fan;
 import io.patterns.command.receivers.Light;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class InvokerTest {
     @Test
