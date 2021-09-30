@@ -51,3 +51,14 @@ According to this principle, an object should only invoke methods if it belongs 
 - Any object the method creates or instantiates
 - Any components of the object
 
+### Hollywood Principle
+
+Don’t call us, we’ll call you.
+Effectively, this principle gives us a way to prevent dependency rot.
+Dependency rot occurs when you have high-level components depending on low-level components depending on high-level components depending on sideways components depending on low-level components, and so on.
+When the rot sets in, no one understands who calls what.
+
+The principle allows low level components to hook themselves into the system, but high-level components determine when these components are needed and how.
+
+**Hook:** A hook is a method that is declared in the abstract class, but only given an empty or default implementation.
+Thus, sub-classes have the ability to "hook-into" the algorithm to implement custom behaviour or ignore the hook if needed.
