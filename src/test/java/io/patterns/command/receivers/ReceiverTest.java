@@ -13,4 +13,19 @@ public class ReceiverTest {
         light.disable();
         Assert.assertFalse(light.isEnabled());
     }
+
+    @Test
+    public void TestFan() {
+        Fan fan = new Fan();
+        Assert.assertFalse(fan.isEnabled());
+        Assert.assertEquals(Fan.STOPPED_SPEED, fan.getSpeed());
+
+        fan.enable();
+        Assert.assertTrue(fan.isEnabled());
+        Assert.assertEquals(Fan.RUNNING_SPEED, fan.getSpeed());
+
+        fan.disable();
+        Assert.assertFalse(fan.isEnabled());
+        Assert.assertEquals(Fan.STOPPED_SPEED, fan.getSpeed());
+    }
 }

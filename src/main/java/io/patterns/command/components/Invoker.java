@@ -8,7 +8,8 @@ import java.util.List;
 
 public class Invoker {
     public final static int NUM_COMMANDS = 7;
-    private List<Command> commands;
+    private final List<Command> commands;
+    private Command lastCommand;
 
     public Invoker() {
         commands = new ArrayList<>();
@@ -23,7 +24,22 @@ public class Invoker {
         }
     }
 
+    public void invokeAt(int index) {
+        if (index >= 0 && index < NUM_COMMANDS) {
+            lastCommand = commands.get(index);
+            lastCommand.execute();
+        }
+    }
+
+    public void undo() {
+        lastCommand.undo();
+    }
+
     public List<Command> getCommands() {
         return commands;
+    }
+
+    public Command getLastCommand() {
+        return lastCommand;
     }
 }
