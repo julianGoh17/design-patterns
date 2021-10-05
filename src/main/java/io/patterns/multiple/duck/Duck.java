@@ -1,5 +1,7 @@
 package io.patterns.multiple.duck;
 
-public interface Duck {
+import io.patterns.multiple.observer.ObservableDuck;
+
+public interface Duck extends ObservableDuck {
     String quack();
 }
