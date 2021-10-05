@@ -23,6 +23,7 @@ public class CountingDuckFactoryTest {
 
     @Test
     public void TestGetQuacks() {
+        DuckCounter.reset();
         DuckFactory factory = new CountingDuckFactory();
         Duck mallardDuck = factory.getMallardDuck();
         Duck rubberDuck = factory.getRubberDuck();

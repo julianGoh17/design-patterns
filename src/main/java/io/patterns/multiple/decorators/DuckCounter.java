@@ -23,4 +23,8 @@ public class DuckCounter implements Duck {
     public Duck getDuck() {
         return this.duck;
     }
+
+    public static void reset() {
+        quacks = 0;
+    }
 }
