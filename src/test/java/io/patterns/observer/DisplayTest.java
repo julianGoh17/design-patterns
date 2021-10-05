@@ -12,7 +12,7 @@ public class DisplayTest {
         String originalDisplayString = castToWeatherDisplay(display).getDisplay();
         Assert.assertEquals("", originalDisplayString);
         display.display();
-        castToWeatherDisplay(display).update(ObserverTest.TEMPERATURE, ObserverTest.HUMIDITY, ObserverTest.PRESSURE);
+        castToWeatherDisplay(display).update(QuackingObserverTest.TEMPERATURE, QuackingObserverTest.HUMIDITY, QuackingObserverTest.PRESSURE);
         Assert.assertNotEquals(originalDisplayString, castToWeatherDisplay(display).getDisplay());
     }
 

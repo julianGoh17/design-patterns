@@ -5,7 +5,7 @@ import io.patterns.observer.observer.WeatherDisplay;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-public class ObserverTest {
+public class QuackingObserverTest {
     public static final double TEMPERATURE = 10.5;
     public static final double HUMIDITY = 12.5;
     public static final double PRESSURE = 1;

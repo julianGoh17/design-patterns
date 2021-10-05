@@ -36,15 +36,15 @@ public class SubjectTest {
         Observer observer = new WeatherDisplay();
         subject.addObserver(observer);
 
-        castToWeatherData(subject).setTemperature(ObserverTest.TEMPERATURE);
-        castToWeatherData(subject).setHumidity(ObserverTest.HUMIDITY);
-        castToWeatherData(subject).setPressure(ObserverTest.PRESSURE);
+        castToWeatherData(subject).setTemperature(QuackingObserverTest.TEMPERATURE);
+        castToWeatherData(subject).setHumidity(QuackingObserverTest.HUMIDITY);
+        castToWeatherData(subject).setPressure(QuackingObserverTest.PRESSURE);
 
         subject.notifyObservers();
 
-        Assert.assertEquals(ObserverTest.TEMPERATURE, ObserverTest.castToWeatherDisplay(observer).getDisplayedTemperature(), 0);
-        Assert.assertEquals(ObserverTest.HUMIDITY, ObserverTest.castToWeatherDisplay(observer).getDisplayedHumidity(), 0);
-        Assert.assertEquals(ObserverTest.PRESSURE, ObserverTest.castToWeatherDisplay(observer).getDisplayedPressure(), 0);
+        Assert.assertEquals(QuackingObserverTest.TEMPERATURE, QuackingObserverTest.castToWeatherDisplay(observer).getDisplayedTemperature(), 0);
+        Assert.assertEquals(QuackingObserverTest.HUMIDITY, QuackingObserverTest.castToWeatherDisplay(observer).getDisplayedHumidity(), 0);
+        Assert.assertEquals(QuackingObserverTest.PRESSURE, QuackingObserverTest.castToWeatherDisplay(observer).getDisplayedPressure(), 0);
     }
 
     private WeatherData castToWeatherData(Subject subject) {
