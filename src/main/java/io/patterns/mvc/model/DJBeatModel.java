@@ -1,8 +1,14 @@
 package io.patterns.mvc.model;
 
-public class DJBeatModel implements BeatModel {
+import io.patterns.mvc.view.Observer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class DJBeatModel implements BeatModel, Observable {
     public static final int DEFAULT_BEATS = 90;
     private int beats = DEFAULT_BEATS;
+    private final List<Observer> observers = new ArrayList<>();
 
     private boolean isOn = false;
 
@@ -10,12 +16,29 @@ public class DJBeatModel implements BeatModel {
     public void turnOn() {
         isOn = true;
         setBeat(DEFAULT_BEATS);
+        notifyObservers();
     }
 
     @Override
     public void turnOff() {
         isOn = false;
         setBeat(0);
+        notifyObservers();
+    }
+
+    @Override
+    public void addObserver(Observer observer) {
+        this.observers.add(observer);
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        this.observers.remove(observer);
+    }
+
+    @Override
+    public void notifyObservers() {
+        this.observers.forEach(observer -> observer.update(this));
     }
 
     @Override
@@ -36,5 +59,10 @@ public class DJBeatModel implements BeatModel {
     @Override
     public int getBeat() {
         return beats;
+    }
+
+    @Override
+    public List<Observer> getObservers() {
+        return observers;
     }
 }
