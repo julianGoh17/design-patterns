@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 public class DuckCounterTest {
     @Test
     public void TestGetDucks() {
+        DuckCounter.reset();
         Assert.assertEquals(0, DuckCounter.getQuacks());
     }
 
