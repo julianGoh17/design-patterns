@@ -47,4 +47,17 @@ public class VacationBuilderTest {
         Builder builder = new VacationBuilder();
         Assert.assertEquals(builder.getRoot(), builder.end());
     }
+
+    @Test
+    public void TestIterator() {
+        VacationBuilder builder = new VacationBuilder();
+        builder
+            .withComponent("Day")
+            .endComponent()
+        .end();
+        Assert.assertEquals(builder.getRoot().toIterator().next(), builder.getRootIterator().next());
+        Iterator<Event> eventIterator = builder.getEventIterator();
+        Assert.assertNotEquals(builder.getRoot().toIterator(), eventIterator);
+        Assert.assertFalse(eventIterator.hasNext());
+    }
 }

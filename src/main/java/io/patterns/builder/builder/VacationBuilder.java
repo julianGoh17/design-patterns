@@ -2,6 +2,9 @@ package io.patterns.builder.builder;
 
 import io.patterns.builder.event.Event;
 import io.patterns.builder.event.NestedEvent;
+import io.patterns.builder.iterator.EventIterator;
+
+import java.util.Iterator;
 
 public class VacationBuilder implements Builder {
     private final Event root = new NestedEvent("Vacation");
@@ -20,7 +23,9 @@ public class VacationBuilder implements Builder {
 
     @Override
     public Builder endComponent() {
-        root.addEvent(day);
+        if (day != null) {
+            root.addEvent(day);
+        }
         return this;
     }
 
@@ -33,5 +38,13 @@ public class VacationBuilder implements Builder {
     @Override
     public Event end() {
         return root;
+    }
+
+    public Iterator<Event> getEventIterator() {
+        return new EventIterator<>(this);
+    }
+
+    public Iterator<Event> getRootIterator() {
+        return root.toIterator();
     }
 }

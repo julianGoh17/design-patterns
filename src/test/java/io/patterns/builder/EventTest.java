@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class EventTest {
     public static final String EVENT_NAME = "event-name";
@@ -44,5 +45,18 @@ public class EventTest {
         Assert.assertEquals(child, iterator.next());
         Assert.assertFalse(iterator.hasNext());
         Assert.assertEquals(1, event.getNumberOfDirectChildEvents());
+    }
+
+    @Test
+    public void TestEmptyNestedEvent() {
+        Event event = new NestedEvent(EVENT_NAME);
+        Iterator<Event> iterator = event.toIterator();
+        Assert.assertFalse(iterator.hasNext());
+        try {
+            iterator.next();
+            Assert.fail("Should have thrown exception");
+        } catch (NoSuchElementException e) {
+            Assert.assertNotNull(e);
+        }
     }
 }
