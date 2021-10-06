@@ -58,6 +58,6 @@ public class VacationBuilderTest {
         Assert.assertEquals(builder.getRoot().toIterator().next(), builder.getRootIterator().next());
         Iterator<Event> eventIterator = builder.getEventIterator();
         Assert.assertNotEquals(builder.getRoot().toIterator(), eventIterator);
-        Assert.assertFalse(eventIterator.hasNext());
+        Assert.assertTrue(eventIterator.hasNext());
     }
 }
