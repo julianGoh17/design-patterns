@@ -16,14 +16,12 @@ public class DJBeatModel implements BeatModel, Observable {
     public void turnOn() {
         isOn = true;
         setBeat(DEFAULT_BEATS);
-        notifyObservers();
     }
 
     @Override
     public void turnOff() {
         isOn = false;
         setBeat(0);
-        notifyObservers();
     }
 
     @Override
@@ -44,6 +42,7 @@ public class DJBeatModel implements BeatModel, Observable {
     @Override
     public void setBeat(int beat) {
         this.beats = beat;
+        notifyObservers();
     }
 
     @Override

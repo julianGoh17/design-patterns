@@ -19,6 +19,16 @@ public class BeatModelTest {
     }
 
     @Test
+    public void TestSetterNotifiesObserver() {
+        DJBeatModel model = new DJBeatModel();
+        DJControlView view = new DJControlView();
+        model.addObserver(view);
+        int beat = 1234;
+        model.setBeat(beat);
+        Assert.assertEquals(beat, view.getDisplayedBeat());
+    }
+
+    @Test
     public void TestTurnOn() {
         DJBeatModel model = new DJBeatModel();
         DJControlView view = new DJControlView();
