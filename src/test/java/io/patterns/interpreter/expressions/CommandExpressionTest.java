@@ -15,6 +15,7 @@ public class CommandExpressionTest {
         Assert.assertTrue(expression.isValidFor("Right"));
         Assert.assertFalse(expression.isValidFor("anything else"));
         Assert.assertFalse(expression.isValidFor(""));
+        Assert.assertFalse(expression.isValidFor("this Right"));
     }
 
     @Test

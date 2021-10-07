@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class CommandExpression implements Expression {
     private final Runner runner;
-    private final Pattern regex = Pattern.compile("forward|right", Pattern.CASE_INSENSITIVE);
+    private final Pattern regex = Pattern.compile("^forward|right$", Pattern.CASE_INSENSITIVE);
 
     public CommandExpression(Runner runner) {
         this.runner = runner;
@@ -23,6 +23,6 @@ public class CommandExpression implements Expression {
 
     @Override
     public boolean isValidFor(String expression) {
-        return regex.matcher(expression).find();
+        return regex.matcher(expression).matches();
     }
 }
