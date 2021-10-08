@@ -1,7 +1,7 @@
 package io.patterns.mediator.device;
 
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class DeviceTest extends BaseDeviceTest {
     private static class TestDevice extends Device { }

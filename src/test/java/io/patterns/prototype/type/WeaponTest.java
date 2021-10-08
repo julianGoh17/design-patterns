@@ -2,7 +2,7 @@ package io.patterns.prototype.type;
 
 import io.patterns.mediator.type.Weapon;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class WeaponTest {
     @Test

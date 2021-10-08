@@ -3,7 +3,7 @@ package io.patterns.prototype;
 import io.patterns.mediator.type.LandType;
 import io.patterns.prototype.monster.Monster;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class MonsterRegistryTest {
     @Test
